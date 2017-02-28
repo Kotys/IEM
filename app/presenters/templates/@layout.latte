@@ -9,49 +9,33 @@
 	<link rel="stylesheet" href="{$basePath}/styles/template.css?v={time()}">
 </head>
 <body>
-<header>
-	<div class="wrapper">
-		<a href="">
-			{*Institut Estetické Medicíny*}
-			<img id="logo" src="{$basePath}/assets/logo.png">
-			<nav class="top-nav">
-				<ul>
-					<li><a href="">Domu</a></li>
-					<li><a href="">Domu</a></li>
-					<li><a href="">Domu</a></li>
-				</ul>
-			</nav>
-		</a>
-	</div>
-</header>
-{*<nav id="main-nav">*}
-	{*<div class="wrapper">*}
-		{*<a href="">Estetická medicína</a><!--*}
-		{*--><a href="">Kosmetika</a>*}
-	{*</div>*}
-{*</nav>*}
-<main>
-	<div class="wrapper">
-		{include content}
-	</div>
-</main>
+<div class="full-width-wrapper">
+	<header>
+		<div id="logo">
+			<a href=""><img src="{$basePath}/assets/logo.png"></a>
+		</div>
+		<nav>
+			<a href="" class="active">Domů</a>
+			<a href="">Estetická medicína</a>
+			<a href="">Kosmetika</a>
+			<a href="">Kontakty</a>
+		</nav>
+	</header>
+</div>
+<div class="full-width-wrapper">
+	{include content}
+</div>
 
-{*<footer>*}
-	{*<div class="wrapper">*}
-		{*<div class="row">*}
-			{*<div class="col">*}
-				{*MUDr. Lenka Šustková - <a target="_blank" href="http://rejstrik.penize.cz/ares/61716570-mudr-lenka-sustkova">IČ: 61716570</a><br>*}
-				{*<br>*}
-				{*Adresa - <a target="_blank" href="https://goo.gl/maps/6scLteDBbmu">Nivy IV 5337, Zlín 76001</a>*}
-			{*</div>*}
-			{*<div class="col legal">*}
-				{*Realizace - <a target="_blank" href="https://jkotrba.net">Jan Kotrba</a><br>*}
-				{*<br>*}
-				{*&copy; {date('Y')} - <a href="/">Institut Estetické Medicíny</a>*}
-			{*</div>*}
-		{*</div>*}
-	{*</div>*}
-{*</footer>*}
+<div class="full-width-wrapper no-border">
+	<footer>
+		<p class="copyright">
+			Institut Estetické Medicíny - 2017
+			<a class="facebook" href=""><img class="facebook" src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_24,h_24,al_c,usm_0.66_1.00_0.01/0fdef751204647a3bbd7eaa2827ed4f9.png" alt=""></a>
+		</p>
+	</footer>
+</div>
+
+
 
 <div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
 

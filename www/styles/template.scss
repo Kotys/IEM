@@ -11,6 +11,12 @@ html {
 	font-weight: 300;
 }
 
+html, body {
+	width: 100%;
+	overflow-y: scroll;
+	margin: 0;
+}
+
 /** Global **/
 
 .button {
@@ -47,9 +53,9 @@ header, section, footer {
 	width: 960px;
 	display: block;
 	margin: auto;
-	@media screen and (max-width: 1000px) {
+	@media screen and (max-width: 768px) {
 		& {
-			width: calc(100% - 40px);
+			width: calc(100vw - 40px);
 			padding-left: 20px !important;
 			padding-right: 20px !important;
 		}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>{ifset title}{include title|stripHtml} | {/ifset}Institut Estetické Medicíny</title>
+	{*<link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">*}
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="{$basePath}/styles/template.css?v={time()}">
+</head>
+<body>
+<header>
+	<div class="wrapper">
+		<a href="">
+			{*Institut Estetické Medicíny*}
+			<img id="logo" src="{$basePath}/assets/logo.png">
+			<nav class="top-nav">
+				<ul>
+					<li><a href="">Domu</a></li>
+					<li><a href="">Domu</a></li>
+					<li><a href="">Domu</a></li>
+				</ul>
+			</nav>
+		</a>
+	</div>
+</header>
+{*<nav id="main-nav">*}
+	{*<div class="wrapper">*}
+		{*<a href="">Estetická medicína</a><!--*}
+		{*--><a href="">Kosmetika</a>*}
+	{*</div>*}
+{*</nav>*}
+<main>
+	<div class="wrapper">
+		{include content}
+	</div>
+</main>
+
+{*<footer>*}
+	{*<div class="wrapper">*}
+		{*<div class="row">*}
+			{*<div class="col">*}
+				{*MUDr. Lenka Šustková - <a target="_blank" href="http://rejstrik.penize.cz/ares/61716570-mudr-lenka-sustkova">IČ: 61716570</a><br>*}
+				{*<br>*}
+				{*Adresa - <a target="_blank" href="https://goo.gl/maps/6scLteDBbmu">Nivy IV 5337, Zlín 76001</a>*}
+			{*</div>*}
+			{*<div class="col legal">*}
+				{*Realizace - <a target="_blank" href="https://jkotrba.net">Jan Kotrba</a><br>*}
+				{*<br>*}
+				{*&copy; {date('Y')} - <a href="/">Institut Estetické Medicíny</a>*}
+			{*</div>*}
+		{*</div>*}
+	{*</div>*}
+{*</footer>*}
+
+<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+
+{block scripts}
+	<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
+{/block}
+</body>
+</html>

@@ -5,9 +5,10 @@ $dark-black: #0E3C53;
 $primary-ui-color: #6D6141;
 
 html {
-	font-family: Avenir;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 18px;
 	color: $dark-black;
+	font-weight: 300;
 }
 
 /** Global **/
@@ -25,7 +26,8 @@ h2 {
 }
 
 p {
-	font-size: 16px;
+	font-size: 18px;
+	line-height: 28px;
 }
 
 /** Site **/
@@ -63,7 +65,7 @@ header {
 	}
 
 	nav {
-		margin-top: 47px;
+		margin-top: 34px;
 		float: right;
 		display: inline-block;
 		a {
@@ -72,7 +74,8 @@ header {
 			color: $dark-black;
 			padding: 3px;
 			margin: 0 8px;
-			font-size: 16px;
+			font-size: 18px;
+			font-weight: 300;
 			&:first-child {
 				margin-left: 0;
 			}
@@ -111,21 +114,21 @@ section.home-page {
 	}
 
 	div.reference {
-		margin-top: -60px;
+		margin-top: -70px;
 		text-align: right;
 		div.reference-text {
 			max-width: 400px;
 			display: inline-block;
-			margin-top: 300px;
-			margin-right: 50px;
+			margin-top: 260px;
+			margin-right: 60px;
 			vertical-align: top;
 			p {
 				font-style: italic;
 				text-align: left;
 			}
 			div.author {
-				margin: 10px 20px 0 0;
-				font-size: 20px;
+				margin: 5px 20px 0 0;
+				font-size: 26px;
 			}
 		}
 		img {
@@ -137,6 +140,7 @@ section.home-page {
 footer {
 	padding: 50px 0;
 	p.copyright {
+		font-size: 16px;
 		a.facebook {
 			display: inline;
 			float: right;

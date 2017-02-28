@@ -42,9 +42,10 @@ table {
   border-spacing: 0; }
 
 html {
-  font-family: Avenir;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
-  color: #0E3C53; }
+  color: #0E3C53;
+  font-weight: 300; }
 
 /** Global **/
 .button {
@@ -58,7 +59,8 @@ h2 {
   font-size: 38px; }
 
 p {
-  font-size: 16px; }
+  font-size: 18px;
+  line-height: 28px; }
 
 /** Site **/
 .full-width-wrapper {
@@ -84,7 +86,7 @@ header {
     display: inline-block;
     margin-left: 40px; }
   header nav {
-    margin-top: 47px;
+    margin-top: 34px;
     float: right;
     display: inline-block; }
     header nav a {
@@ -93,7 +95,8 @@ header {
       color: #0E3C53;
       padding: 3px;
       margin: 0 8px;
-      font-size: 16px; }
+      font-size: 18px;
+      font-weight: 300; }
       header nav a:first-child {
         margin-left: 0; }
       header nav a:last-child {
@@ -118,26 +121,28 @@ section.home-page div.about-us {
   section.home-page div.about-us h2 {
     margin-bottom: 10px; }
 section.home-page div.reference {
-  margin-top: -60px;
+  margin-top: -70px;
   text-align: right; }
   section.home-page div.reference div.reference-text {
     max-width: 400px;
     display: inline-block;
-    margin-top: 300px;
-    margin-right: 50px;
+    margin-top: 260px;
+    margin-right: 60px;
     vertical-align: top; }
     section.home-page div.reference div.reference-text p {
       font-style: italic;
       text-align: left; }
     section.home-page div.reference div.reference-text div.author {
-      margin: 10px 20px 0 0;
-      font-size: 20px; }
+      margin: 5px 20px 0 0;
+      font-size: 26px; }
 
 footer {
   padding: 50px 0; }
-  footer p.copyright a.facebook {
-    display: inline;
-    float: right;
-    vertical-align: top; }
+  footer p.copyright {
+    font-size: 16px; }
+    footer p.copyright a.facebook {
+      display: inline;
+      float: right;
+      vertical-align: top; }
 
 /*# sourceMappingURL=template.css.map */

@@ -70,7 +70,7 @@ p {
 
 /** Site **/
 .full-width-wrapper {
-  width: 100vw;
+  width: 100%;
   display: block;
   border-bottom: 3px solid #6D6141; }
   .full-width-wrapper.no-border {
@@ -82,7 +82,7 @@ header, section, footer {
   margin: auto; }
   @media screen and (max-width: 768px) {
     header, section, footer {
-      width: calc(100vw - 40px);
+      width: calc(100% - 40px);
       padding-left: 20px !important;
       padding-right: 20px !important; } }
 

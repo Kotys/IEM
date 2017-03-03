@@ -209,7 +209,9 @@ section.category div.article {
   section.category nav.category-nav, section.category div.article {
     display: block;
     width: 100%;
-    margin: 0; } }
+    margin: 0; }
+  section.category div.article {
+    margin: 40px 0 0 0; } }
 
 section.contact h2 {
   margin-bottom: 10px; }

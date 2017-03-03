@@ -8,6 +8,7 @@
 	<title>{ifset title}{include title|stripHtml} | {/ifset}Institut Estetické Medicíny</title>
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400,500,600,700&subset=latin,latin-ext'
 		  rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="{$basePath}/assets/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{$basePath}/styles/template.css?v={sha1(date('j.n.y'))}">
 </head>
 <body>
@@ -20,7 +21,7 @@
 			<a n:href="Homepage:default"{ifCurrent Homepage:default} class="active"{/ifCurrent}>Domů</a>
 			<a n:href="Category:default, 'esteticka-medicina'"{ifCurrent Category:default, 'esteticka-medicina'} class="active"{/ifCurrent}>Estetická medicína</a>
 			<a n:href="Category:default, 'kosmetika'"{ifCurrent Category:default, 'kosmetika'} class="active"{/ifCurrent}>Kosmetika</a>
-			<a href="">Kontakty</a>
+			<a n:href="Homepage:contact"{ifCurrent Homepage:contact} class="active"{/ifCurrent}>Kontakty</a>
 		</nav>
 	</header>
 </div>
@@ -32,7 +33,7 @@
 	<footer>
 		<p class="copyright">
 			Institut Estetické Medicíny - 2017
-			<a class="facebook" href=""><img class="facebook"
+			<a class="facebook" href="https://www.facebook.com/Institut-Estetick%C3%A9-Medic%C3%ADny-Zl%C3%ADn-641164862583685/?fref=ts" target="_blank"><img class="facebook"
 											 src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_24,h_24,al_c,usm_0.66_1.00_0.01/0fdef751204647a3bbd7eaa2827ed4f9.png"
 											 alt=""></a>
 		</p>

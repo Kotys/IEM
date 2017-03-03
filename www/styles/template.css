@@ -55,7 +55,6 @@ html, body {
 .button {
   display: inline-block;
   padding: 23px 0;
-  background: grey;
   text-decoration: none;
   cursor: pointer !important; }
   .button.button-small {
@@ -70,6 +69,9 @@ h3 {
 p {
   font-size: 18px;
   line-height: 28px; }
+
+a {
+  cursor: pointer; }
 
 /** Site **/
 .full-width-wrapper {
@@ -120,8 +122,8 @@ section.home-page nav {
   text-align: center; }
   section.home-page nav .button {
     width: 260px;
-    color: #0E3C53;
-    background-color: rgba(204, 179, 138, 0.45); }
+    background: linear-gradient(#D6CBA3, #B4A056);
+    color: white; }
     section.home-page nav .button:first-child {
       margin-right: 120px; }
 section.home-page div.about-us {
@@ -148,9 +150,8 @@ section.home-page div.reference {
     width: calc(100% - 600px); }
 
 section.category h2.category-title {
-  margin: 0;
+  margin: 0 0 40px 0;
   padding: 0;
-  margin-bottom: 40px;
   text-align: center; }
 section.category nav.category-nav {
   width: 250px;
@@ -172,6 +173,33 @@ section.category div.article {
   margin-top: -10px; }
   section.category div.article h3 {
     margin-bottom: 12px; }
+
+section.contact h2 {
+  margin-bottom: 10px; }
+section.contact .labels {
+  margin: 80px 0 50px 0;
+  text-align: center; }
+  section.contact .labels .contact-label {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 50px; }
+    section.contact .labels .contact-label .icon i {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      padding: 25px;
+      font-size: 30px;
+      background: linear-gradient(#D6CBA3, #B4A056);
+      color: white;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+      border-radius: 100px; }
+    section.contact .labels .contact-label .label-value {
+      margin-top: 25px;
+      font-size: 18px; }
+      section.contact .labels .contact-label .label-value a {
+        text-decoration: none;
+        color: #0E3C53; }
 
 footer {
   padding: 50px 0; }

@@ -1,6 +1,9 @@
 {block title}{$title}{/block}
 {block content}
 	<section class="category">
+
+		<h2 class="category-title">{$categoryTitle}</h2>
+
 		<nav n:if="$category == 'esteticka-medicina'"
 				class="category-nav" n:inner-foreach="$nav as $navCategory => $navTitle">
 			<a n:href="Category:default, 'esteticka-medicina', $navCategory"
@@ -15,7 +18,7 @@
 
 		{if $procedure && isset($articleTitle) && isset($article)}
 			<div class="article">
-				<h2 n:if="isset($articleTitle)">{$articleTitle}</h2>
+				<h3 n:if="isset($articleTitle)">{$articleTitle}</h3>
 				<p n:if="isset($article)">{$article}</p>
 			</div>
 		{else}

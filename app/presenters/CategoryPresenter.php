@@ -22,6 +22,7 @@ class CategoryPresenter extends Presenter
 		$this->getTemplate()->procedure = $procedure ? $procedure : false;
 		$this->getTemplate()->nav = $this->getCategoryNavigation($category);
 		$title = $category == 'esteticka-medicina' ? 'Estetická medicína' : 'Kosmetika';
+		$this->getTemplate()->categoryTitle = $title;
 
 		if ($procedure) {
 			$title = $this->getCategoryNavigation($category)[$procedure];

@@ -43,7 +43,7 @@ table {
 
 html {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #0E3C53;
   font-weight: 400; }
 
@@ -62,10 +62,10 @@ html, body {
     padding: 12px 0; }
 
 h2 {
-  font-size: 38px; }
+  font-size: 36px; }
 
 h3 {
-  font-size: 32px; }
+  font-size: 30px; }
 
 p {
   font-size: 18px;
@@ -97,7 +97,7 @@ header {
     header #logo img {
       width: 220px; }
   header nav {
-    margin-top: 12px;
+    margin-top: 8px;
     float: right;
     display: inline-block; }
     header nav a {
@@ -105,8 +105,7 @@ header {
       text-decoration: none;
       color: #0E3C53;
       padding: 3px;
-      margin: 0 8px;
-      font-size: 18px; }
+      margin: 0 8px; }
       header nav a:first-child {
         margin-left: 0; }
       header nav a:last-child {
@@ -177,7 +176,7 @@ section.category div.article {
 footer {
   padding: 50px 0; }
   footer p.copyright {
-    font-size: 16px; }
+    font-size: 14px; }
     footer p.copyright a.facebook {
       display: inline;
       float: right;

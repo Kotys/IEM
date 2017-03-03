@@ -7,7 +7,7 @@ $secondary-ui-color: #E8DDCA;
 
 html {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	color: $dark-black;
 	font-weight: 400;
 }
@@ -31,11 +31,11 @@ html, body {
 }
 
 h2 {
-	font-size: 38px;
+	font-size: 36px;
 }
 
 h3 {
-	font-size: 32px;
+	font-size: 30px;
 }
 
 p {
@@ -81,7 +81,7 @@ header {
 	}
 
 	nav {
-		margin-top: 12px;
+		margin-top: 8px;
 		float: right;
 		display: inline-block;
 		a {
@@ -90,7 +90,6 @@ header {
 			color: $dark-black;
 			padding: 3px;
 			margin: 0 8px;
-			font-size: 18px;
 			&:first-child {
 				margin-left: 0;
 			}
@@ -191,7 +190,7 @@ section.category {
 footer {
 	padding: 50px 0;
 	p.copyright {
-		font-size: 16px;
+		font-size: 14px;
 		a.facebook {
 			display: inline;
 			float: right;

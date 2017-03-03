@@ -143,6 +143,8 @@ section.home-page div.reference {
     section.home-page div.reference div.reference-text div.author {
       margin: 5px 20px 0 0;
       font-size: 26px; }
+  section.home-page div.reference img {
+    width: calc(100% - 600px); }
 
 section.category nav.category-nav {
   width: 250px;

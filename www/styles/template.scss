@@ -219,6 +219,11 @@ section.category {
 		margin: 0 0 40px 0;
 		padding: 0;
 		text-align: center;
+		@media screen and (max-width: 330px) {
+			& {
+				font-size: 28px;
+			}
+		}
 	}
 	nav.category-nav {
 		width: 250px;

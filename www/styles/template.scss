@@ -46,6 +46,12 @@ a {
 	cursor: pointer;
 }
 
+@media screen and (max-width: 420px) {
+	.hidden-xs {
+		display: none !important;
+	}
+}
+
 /** Site **/
 
 .full-width-wrapper {
@@ -63,7 +69,7 @@ header, section, footer {
 	width: 960px;
 	display: block;
 	margin: auto;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 960px) {
 		& {
 			width: calc(100% - 40px);
 			padding-left: 20px !important;
@@ -80,6 +86,12 @@ header {
 		margin-left: 40px;
 		img {
 			width: 220px;
+		}
+		@media screen and (max-width: 260px) {
+			img {
+				width: 100%;
+			}
+
 		}
 	}
 
@@ -101,6 +113,30 @@ header {
 			}
 			&.active {
 				text-decoration: underline;
+			}
+		}
+	}
+
+	@media screen and (max-width: 690px) {
+		& {
+			padding: 20px 0;
+		}
+		#logo {
+			text-align: center;
+			margin: 0;
+			width: 100%;
+		}
+		nav {
+			display: block;
+			float: none;
+			text-align: center;
+		}
+	}
+
+	@media screen and (max-width: 360px) {
+		nav {
+			a {
+				margin: 0 3px;
 			}
 		}
 	}
@@ -129,12 +165,28 @@ section.home-page {
 				margin-right: 120px;
 			}
 		}
+
+		@media screen and (max-width: 690px) {
+			.button {
+				min-width: 180px;
+				width: calc((100% / 2) - 20%);
+				&:first-child {
+					margin-right: 10%;
+				}
+			}
+
+		}
 	}
 	div.about-us {
 		margin: 80px 0 0 0;
 		max-width: 500px;
 		h2 {
 			margin-bottom: 10px;
+		}
+		@media screen and (max-width: 500px) {
+			& {
+				max-width: 100%;
+			}
 		}
 	}
 

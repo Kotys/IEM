@@ -18,13 +18,14 @@
 			<a n:href="Homepage:default"><img src="{$basePath}/assets/logo.png"></a>
 		</div>
 		<nav>
-			<a n:href="Homepage:default"{ifCurrent Homepage:default} class="active"{/ifCurrent}>Domů</a>
+			<a n:href="Homepage:default"{ifCurrent Homepage:default} class="active hidden-xs"{else} class="hidden-xs"{/ifCurrent}>Domů</a>
 			<a n:href="Category:default, 'esteticka-medicina'"{ifCurrent Category:default, 'esteticka-medicina'} class="active"{/ifCurrent}>Estetická medicína</a>
 			<a n:href="Category:default, 'kosmetika'"{ifCurrent Category:default, 'kosmetika'} class="active"{/ifCurrent}>Kosmetika</a>
 			<a n:href="Homepage:contact"{ifCurrent Homepage:contact} class="active"{/ifCurrent}>Kontakty</a>
 		</nav>
 	</header>
 </div>
+
 <div class="full-width-wrapper">
 	{include content}
 </div>
@@ -39,6 +40,7 @@
 		</p>
 	</footer>
 </div>
+
 
 <div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
 

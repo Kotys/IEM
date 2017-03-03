@@ -73,6 +73,9 @@ p {
 a {
   cursor: pointer; }
 
+@media screen and (max-width: 420px) {
+  .hidden-xs {
+    display: none !important; } }
 /** Site **/
 .full-width-wrapper {
   width: 100%;
@@ -85,7 +88,7 @@ header, section, footer {
   width: 960px;
   display: block;
   margin: auto; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     header, section, footer {
       width: calc(100% - 40px);
       padding-left: 20px !important;
@@ -98,6 +101,9 @@ header {
     margin-left: 40px; }
     header #logo img {
       width: 220px; }
+    @media screen and (max-width: 260px) {
+      header #logo img {
+        width: 100%; } }
   header nav {
     margin-top: 8px;
     float: right;
@@ -114,6 +120,20 @@ header {
         margin-right: 0; }
       header nav a.active {
         text-decoration: underline; }
+  @media screen and (max-width: 690px) {
+    header {
+      padding: 20px 0; }
+    header #logo {
+      text-align: center;
+      margin: 0;
+      width: 100%; }
+    header nav {
+      display: block;
+      float: none;
+      text-align: center; } }
+  @media screen and (max-width: 360px) {
+    header nav a {
+      margin: 0 3px; } }
 
 section {
   padding: 40px 0; }
@@ -126,11 +146,20 @@ section.home-page nav {
     color: white; }
     section.home-page nav .button:first-child {
       margin-right: 120px; }
+  @media screen and (max-width: 690px) {
+    section.home-page nav .button {
+      min-width: 180px;
+      width: calc((100% / 2) - 20%); }
+      section.home-page nav .button:first-child {
+        margin-right: 10%; } }
 section.home-page div.about-us {
   margin: 80px 0 0 0;
   max-width: 500px; }
   section.home-page div.about-us h2 {
     margin-bottom: 10px; }
+  @media screen and (max-width: 500px) {
+    section.home-page div.about-us {
+      max-width: 100%; } }
 section.home-page div.reference {
   margin-top: -70px;
   text-align: right; }

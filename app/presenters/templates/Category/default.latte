@@ -1,0 +1,28 @@
+{block title}{$title}{/block}
+{block content}
+	<section class="category">
+		<nav n:if="$category == 'esteticka-medicina'"
+				class="category-nav" n:inner-foreach="$nav as $navCategory => $navTitle">
+			<a n:href="Category:default, 'esteticka-medicina', $navCategory"
+					class="button button-small {ifCurrent Category:default, $category, $navCategory}active{/ifCurrent}"
+			>{$navTitle}</a>
+		</nav>
+		<nav n:if="$category == 'kosmetika'" class="category-nav" n:inner-foreach="$nav as $navCategory => $navTitle">
+			<a n:href="Category:default, 'kosmetika', $navCategory"
+					class="button button-small {ifCurrent Category:default, 'kosmetika', $navCategory}active{/ifCurrent}"
+			>{$navTitle}</a>
+		</nav>
+
+		{if $procedure && isset($articleTitle) && isset($article)}
+			<div class="article">
+				<h2 n:if="isset($articleTitle)">{$articleTitle}</h2>
+				<p n:if="isset($article)">{$article}</p>
+			</div>
+		{else}
+			<div n:if="!$procedure" class="article">
+				<p n:if="$category == 'esteticka-medicina'">Promo text esteticke mediciny.. TODO</p>
+				<p n:if="$category == 'kosmetika'">Promo text kosmetiky.. TODO</p>
+			</div>
+		{/if}
+	</section>
+{/block}

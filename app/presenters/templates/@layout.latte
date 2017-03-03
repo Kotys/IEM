@@ -6,19 +6,20 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>{ifset title}{include title|stripHtml} | {/ifset}Institut Estetické Medicíny</title>
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400,500,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400,500,600,700&subset=latin,latin-ext'
+		  rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="{$basePath}/styles/template.css?v={time()}">
 </head>
 <body>
 <div class="full-width-wrapper">
 	<header>
 		<div id="logo">
-			<a href=""><img src="{$basePath}/assets/logo.png"></a>
+			<a n:href="Homepage:default"><img src="{$basePath}/assets/logo.png"></a>
 		</div>
 		<nav>
-			<a href="" class="active">Domů</a>
-			<a href="">Estetická medicína</a>
-			<a href="">Kosmetika</a>
+			<a n:href="Homepage:default"{ifCurrent Homepage:default} class="active"{/ifCurrent}>Domů</a>
+			<a n:href="Category:default, 'esteticka-medicina'"{ifCurrent Category:default, 'esteticka-medicina'} class="active"{/ifCurrent}>Estetická medicína</a>
+			<a n:href="Category:default, 'kosmetika'"{ifCurrent Category:default, 'kosmetika'} class="active"{/ifCurrent}>Kosmetika</a>
 			<a href="">Kontakty</a>
 		</nav>
 	</header>
@@ -31,7 +32,9 @@
 	<footer>
 		<p class="copyright">
 			Institut Estetické Medicíny - 2017
-			<a class="facebook" href=""><img class="facebook" src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_24,h_24,al_c,usm_0.66_1.00_0.01/0fdef751204647a3bbd7eaa2827ed4f9.png" alt=""></a>
+			<a class="facebook" href=""><img class="facebook"
+											 src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_24,h_24,al_c,usm_0.66_1.00_0.01/0fdef751204647a3bbd7eaa2827ed4f9.png"
+											 alt=""></a>
 		</p>
 	</footer>
 </div>

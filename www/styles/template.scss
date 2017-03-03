@@ -3,6 +3,7 @@
 $dark-black: #0E3C53;
 
 $primary-ui-color: #6D6141;
+$secondary-ui-color: #E8DDCA;
 
 html {
 	font-family: 'Source Sans Pro', sans-serif;
@@ -25,6 +26,9 @@ html, body {
 	background: grey;
 	text-decoration: none;
 	cursor: pointer !important;
+	&.button-small {
+		padding: 12px 0;
+	}
 }
 
 h2 {
@@ -68,10 +72,13 @@ header {
 	#logo {
 		display: inline-block;
 		margin-left: 40px;
+		img {
+			width: 220px;
+		}
 	}
 
 	nav {
-		margin-top: 34px;
+		margin-top: 12px;
 		float: right;
 		display: inline-block;
 		a {
@@ -139,6 +146,36 @@ section.home-page {
 		}
 		img {
 
+		}
+	}
+}
+
+section.category {
+	nav.category-nav {
+		width: 250px;
+		display: inline-block;
+		vertical-align: top;
+		a {
+			display: block;
+			text-align: center;
+			background: $secondary-ui-color;
+			margin-bottom: 16px;
+			color: $dark-black;
+			&.active {
+				//font-weight: 400;
+				//background: rgba(109, 97, 65, 0.6);
+				color: white;
+			}
+		}
+	}
+	div.article {
+		vertical-align: top;
+		width: calc(100% - 285px);
+		margin-left: 30px;
+		display: inline-block;
+		margin-top: -10px;
+		h2 {
+			margin-bottom: 12px;
 		}
 	}
 }

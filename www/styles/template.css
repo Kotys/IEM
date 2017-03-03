@@ -59,6 +59,8 @@ html, body {
   background: grey;
   text-decoration: none;
   cursor: pointer !important; }
+  .button.button-small {
+    padding: 12px 0; }
 
 h2 {
   font-size: 38px; }
@@ -90,8 +92,10 @@ header {
   header #logo {
     display: inline-block;
     margin-left: 40px; }
+    header #logo img {
+      width: 220px; }
   header nav {
-    margin-top: 34px;
+    margin-top: 12px;
     float: right;
     display: inline-block; }
     header nav a {
@@ -140,6 +144,27 @@ section.home-page div.reference {
     section.home-page div.reference div.reference-text div.author {
       margin: 5px 20px 0 0;
       font-size: 26px; }
+
+section.category nav.category-nav {
+  width: 250px;
+  display: inline-block;
+  vertical-align: top; }
+  section.category nav.category-nav a {
+    display: block;
+    text-align: center;
+    background: #E8DDCA;
+    margin-bottom: 16px;
+    color: #0E3C53; }
+    section.category nav.category-nav a.active {
+      color: white; }
+section.category div.article {
+  vertical-align: top;
+  width: calc(100% - 285px);
+  margin-left: 30px;
+  display: inline-block;
+  margin-top: -10px; }
+  section.category div.article h2 {
+    margin-bottom: 12px; }
 
 footer {
   padding: 50px 0; }
